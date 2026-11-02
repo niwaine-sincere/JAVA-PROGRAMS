@@ -1,0 +1,16 @@
+ class Shape {
+   public double area (int r){
+     return 3.14 * r *r;
+   } 
+   public double area (int l, int b){
+    return l* b;
+   }
+   public static void main(String[] args) {
+    Shape t1 = new Shape();
+    double area1 = t1.area(4);// calls area (int r)
+    Shape t2 = new Shape();
+    double area2 = t2.area(4,7);  //area (int l,int b)
+    System.out.println("Area of circle:" + area1);
+    System.out.println("Area of rectangle:" + area2);
+   }
+}
